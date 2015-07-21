@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class PVPopUpTests: XCTestCase {
+class PVShowMessageTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

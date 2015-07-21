@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E7FDC5E1B5E4C2200C902B6 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7FDC5D1B5E4C2200C902B6 /* SecondVC.swift */; };
 		4EB255E41B5D665000033107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB255E31B5D665000033107 /* AppDelegate.swift */; };
 		4EB255E61B5D665000033107 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB255E51B5D665000033107 /* ViewController.swift */; };
 		4EB255E91B5D665000033107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB255E71B5D665000033107 /* Main.storyboard */; };
 		4EB255EB1B5D665000033107 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB255EA1B5D665000033107 /* Images.xcassets */; };
 		4EB255EE1B5D665000033107 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EB255EC1B5D665000033107 /* LaunchScreen.xib */; };
-		4EB255FA1B5D665000033107 /* PVPopUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB255F91B5D665000033107 /* PVPopUpTests.swift */; };
+		4EB255FA1B5D665000033107 /* PVShowMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB255F91B5D665000033107 /* PVShowMessageTests.swift */; };
+		4EB256041B5D66B000033107 /* PVShowMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB256031B5D66B000033107 /* PVShowMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +28,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4EB255DE1B5D665000033107 /* PVPopUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PVPopUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E7FDC5D1B5E4C2200C902B6 /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		4EB255DE1B5D665000033107 /* Show Message.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Show Message.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB255E21B5D665000033107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EB255E31B5D665000033107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EB255E51B5D665000033107 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4EB255E81B5D665000033107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EB255EA1B5D665000033107 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4EB255ED1B5D665000033107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4EB255F31B5D665000033107 /* PVPopUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PVPopUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB255F31B5D665000033107 /* Show MessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Show MessageTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB255F81B5D665000033107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EB255F91B5D665000033107 /* PVPopUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVPopUpTests.swift; sourceTree = "<group>"; };
+		4EB255F91B5D665000033107 /* PVShowMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVShowMessageTests.swift; sourceTree = "<group>"; };
+		4EB256031B5D66B000033107 /* PVShowMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PVShowMessage.swift; path = ../../Source/PVShowMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,7 @@
 		4EB255D51B5D665000033107 = {
 			isa = PBXGroup;
 			children = (
-				4EB255E01B5D665000033107 /* PVPopUp */,
+				4EB255E01B5D665000033107 /* PVShowMessage */,
 				4EB255F61B5D665000033107 /* PVPopUpTests */,
 				4EB255DF1B5D665000033107 /* Products */,
 			);
@@ -68,23 +72,25 @@
 		4EB255DF1B5D665000033107 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4EB255DE1B5D665000033107 /* PVPopUp.app */,
-				4EB255F31B5D665000033107 /* PVPopUpTests.xctest */,
+				4EB255DE1B5D665000033107 /* Show Message.app */,
+				4EB255F31B5D665000033107 /* Show MessageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4EB255E01B5D665000033107 /* PVPopUp */ = {
+		4EB255E01B5D665000033107 /* PVShowMessage */ = {
 			isa = PBXGroup;
 			children = (
-				4EB255E31B5D665000033107 /* AppDelegate.swift */,
 				4EB255E51B5D665000033107 /* ViewController.swift */,
+				4E7FDC5D1B5E4C2200C902B6 /* SecondVC.swift */,
+				4EB256031B5D66B000033107 /* PVShowMessage.swift */,
 				4EB255E71B5D665000033107 /* Main.storyboard */,
 				4EB255EA1B5D665000033107 /* Images.xcassets */,
 				4EB255EC1B5D665000033107 /* LaunchScreen.xib */,
+				4EB255E31B5D665000033107 /* AppDelegate.swift */,
 				4EB255E11B5D665000033107 /* Supporting Files */,
 			);
-			path = PVPopUp;
+			path = PVShowMessage;
 			sourceTree = "<group>";
 		};
 		4EB255E11B5D665000033107 /* Supporting Files */ = {
@@ -98,10 +104,11 @@
 		4EB255F61B5D665000033107 /* PVPopUpTests */ = {
 			isa = PBXGroup;
 			children = (
-				4EB255F91B5D665000033107 /* PVPopUpTests.swift */,
+				4EB255F91B5D665000033107 /* PVShowMessageTests.swift */,
 				4EB255F71B5D665000033107 /* Supporting Files */,
 			);
-			path = PVPopUpTests;
+			name = PVPopUpTests;
+			path = PVShowMessageTests;
 			sourceTree = "<group>";
 		};
 		4EB255F71B5D665000033107 /* Supporting Files */ = {
@@ -115,9 +122,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4EB255DD1B5D665000033107 /* PVPopUp */ = {
+		4EB255DD1B5D665000033107 /* Show Message */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EB255FD1B5D665000033107 /* Build configuration list for PBXNativeTarget "PVPopUp" */;
+			buildConfigurationList = 4EB255FD1B5D665000033107 /* Build configuration list for PBXNativeTarget "Show Message" */;
 			buildPhases = (
 				4EB255DA1B5D665000033107 /* Sources */,
 				4EB255DB1B5D665000033107 /* Frameworks */,
@@ -127,14 +134,14 @@
 			);
 			dependencies = (
 			);
-			name = PVPopUp;
+			name = "Show Message";
 			productName = PVPopUp;
-			productReference = 4EB255DE1B5D665000033107 /* PVPopUp.app */;
+			productReference = 4EB255DE1B5D665000033107 /* Show Message.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4EB255F21B5D665000033107 /* PVPopUpTests */ = {
+		4EB255F21B5D665000033107 /* Show MessageTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EB256001B5D665000033107 /* Build configuration list for PBXNativeTarget "PVPopUpTests" */;
+			buildConfigurationList = 4EB256001B5D665000033107 /* Build configuration list for PBXNativeTarget "Show MessageTests" */;
 			buildPhases = (
 				4EB255EF1B5D665000033107 /* Sources */,
 				4EB255F01B5D665000033107 /* Frameworks */,
@@ -145,9 +152,9 @@
 			dependencies = (
 				4EB255F51B5D665000033107 /* PBXTargetDependency */,
 			);
-			name = PVPopUpTests;
+			name = "Show MessageTests";
 			productName = PVPopUpTests;
-			productReference = 4EB255F31B5D665000033107 /* PVPopUpTests.xctest */;
+			productReference = 4EB255F31B5D665000033107 /* Show MessageTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -161,6 +168,7 @@
 				TargetAttributes = {
 					4EB255DD1B5D665000033107 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 7B65AY7GL4;
 					};
 					4EB255F21B5D665000033107 = {
 						CreatedOnToolsVersion = 6.4;
@@ -168,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4EB255D91B5D665000033107 /* Build configuration list for PBXProject "PVPopUp" */;
+			buildConfigurationList = 4EB255D91B5D665000033107 /* Build configuration list for PBXProject "Show Message" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,8 +189,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4EB255DD1B5D665000033107 /* PVPopUp */,
-				4EB255F21B5D665000033107 /* PVPopUpTests */,
+				4EB255DD1B5D665000033107 /* Show Message */,
+				4EB255F21B5D665000033107 /* Show MessageTests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,7 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB256041B5D66B000033107 /* PVShowMessage.swift in Sources */,
 				4EB255E61B5D665000033107 /* ViewController.swift in Sources */,
+				4E7FDC5E1B5E4C2200C902B6 /* SecondVC.swift in Sources */,
 				4EB255E41B5D665000033107 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EB255FA1B5D665000033107 /* PVPopUpTests.swift in Sources */,
+				4EB255FA1B5D665000033107 /* PVShowMessageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +240,7 @@
 /* Begin PBXTargetDependency section */
 		4EB255F51B5D665000033107 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4EB255DD1B5D665000033107 /* PVPopUp */;
+			target = 4EB255DD1B5D665000033107 /* Show Message */;
 			targetProxy = 4EB255F41B5D665000033107 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -342,9 +352,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PVPopUp/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/PVShowMessage/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Show Message";
 			};
 			name = Debug;
 		};
@@ -352,9 +364,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PVPopUp/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/PVShowMessage/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Show Message";
 			};
 			name = Release;
 		};
@@ -372,7 +386,7 @@
 				);
 				INFOPLIST_FILE = PVPopUpTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Show MessageTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PVPopUp.app/PVPopUp";
 			};
 			name = Debug;
@@ -387,7 +401,7 @@
 				);
 				INFOPLIST_FILE = PVPopUpTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Show MessageTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PVPopUp.app/PVPopUp";
 			};
 			name = Release;
@@ -395,7 +409,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4EB255D91B5D665000033107 /* Build configuration list for PBXProject "PVPopUp" */ = {
+		4EB255D91B5D665000033107 /* Build configuration list for PBXProject "Show Message" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EB255FB1B5D665000033107 /* Debug */,
@@ -404,21 +418,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EB255FD1B5D665000033107 /* Build configuration list for PBXNativeTarget "PVPopUp" */ = {
+		4EB255FD1B5D665000033107 /* Build configuration list for PBXNativeTarget "Show Message" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EB255FE1B5D665000033107 /* Debug */,
 				4EB255FF1B5D665000033107 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		4EB256001B5D665000033107 /* Build configuration list for PBXNativeTarget "PVPopUpTests" */ = {
+		4EB256001B5D665000033107 /* Build configuration list for PBXNativeTarget "Show MessageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EB256011B5D665000033107 /* Debug */,
 				4EB256021B5D665000033107 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
