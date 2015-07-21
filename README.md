@@ -86,12 +86,12 @@ import PVShow_Message
 
 ### Touch event via Delegation
 
-#### You can attach any identifier to the message view and it will be returned to you via a delegate method
+You can attach any identifier to the message view and it will be returned to you via a delegate method
 ```Swift
     PVShowMessage.instance.showMessage(text: "My Text", identifier: 10)
 ```
 
-#### Tell a message view who is delegate in a `viewWillAppear` method
+Tell a message view who is delegate in a `viewWillAppear` method
 
 ```Swift
 override func viewWillAppear(animated: Bool) {
@@ -102,7 +102,7 @@ override func viewWillAppear(animated: Bool) {
 ```
 
 
-#### Implement `PVShowMessageDelegate`
+Implement `PVShowMessageDelegate`
 
 ```Swift
     func didTapToMessage(identifier: AnyObject?) {
