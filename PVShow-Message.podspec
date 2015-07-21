@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.license = 'MIT'
   s.summary = 'Simple library to show custom message with a touch event'
   s.homepage = 'https://github.com/Vaberer/PVShow-Message'
-  s.screenshots = "https://raw.githubusercontent.com/Vaberer/Font-Awesome-Swift/master/resources/image1.png"
+  s.screenshots = "https://raw.githubusercontent.com/Vaberer/PVShow-Message/master/resources/pvshow_message.gif"
   s.social_media_url = 'http://twitter.com/vaberer'
   s.authors = { "Patrik Vaberer" => "patrik.vaberer@gmail.com" }
   s.source = { :git => 'https://github.com/Vaberer/PVShow-Message.git', :tag => s.version }
