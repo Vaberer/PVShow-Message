@@ -21,7 +21,7 @@ class ViewController: UIViewController, PVShowMessageDelegate {
 //        PVShowMessage.cFontSize = 40
 //        PVShowMessage.cTextColor = UIColor.lightTextColor()
 //        PVShowMessage.cPositionFromEdge = 150
-//        PVShowMessage.cExtraShowTimeForMessage = 2
+//        PVShowMessage.cExtraShowTimeForMessage = 1
 //        PVShowMessage.cInitialPosition = .Top
 //        PVShowMessage.cAnimationDuration = 1.5
         
