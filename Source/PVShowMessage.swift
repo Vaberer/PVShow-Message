@@ -47,7 +47,7 @@ public class PVShowMessage {
     
     public static let instance = PVShowMessage()
     private var animations: [(text: String, identifier: AnyObject?)] = []
-    var concurrentAnimations = 0
+    private var concurrentAnimations = 0
     
     public func showMessage(#text: String) {
         
