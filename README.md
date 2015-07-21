@@ -7,6 +7,11 @@ I like &#9733;. Do not forget to &#9733; this super convenient library.
 
 Simple library to show custom messages with a touch event. Fully customizable via properties. If any message is currently showing and you want to show another message, it will wait until a previous message will dismiss.
 
+
+Works perfectly in **portrait**, **landscape** mode and with **constraints**.
+
+
+
 <p align="center">
   <img height="480" src="https://github.com/Vaberer/PVShow-Message/blob/master/resources/pvshow_message.gif"/>
 </p>
