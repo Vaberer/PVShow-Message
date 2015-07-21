@@ -13,17 +13,17 @@ class ViewController: UIViewController, PVShowMessageDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        PVShowMessage.cBackgroundColor = UIColor.blackColor()
-        PVShowMessage.cBorderColor = UIColor.lightGrayColor()
-        PVShowMessage.cBorderWidth = 3
-        PVShowMessage.cCornerRadius = 0
-        PVShowMessage.cFontName = "HelveticeNeue-Light"
-        PVShowMessage.cFontSize = 40
-        PVShowMessage.cTextColor = UIColor.lightTextColor()
-        PVShowMessage.cPositionFromEdge = 200
-        PVShowMessage.cExtraShowTimeForMessage = 3
-        PVShowMessage.cInitialPosition = .Top
-        PVShowMessage.cAnimationDuration = 1.5
+//        PVShowMessage.cBackgroundColor = UIColor.blackColor()
+//        PVShowMessage.cBorderColor = UIColor.lightGrayColor()
+//        PVShowMessage.cBorderWidth = 3
+//        PVShowMessage.cCornerRadius = 0
+//        PVShowMessage.cFontName = "HelveticeNeue-Light"
+//        PVShowMessage.cFontSize = 40
+//        PVShowMessage.cTextColor = UIColor.lightTextColor()
+//        PVShowMessage.cPositionFromEdge = 150
+//        PVShowMessage.cExtraShowTimeForMessage = 2
+//        PVShowMessage.cInitialPosition = .Top
+//        PVShowMessage.cAnimationDuration = 1.5
         
         
         PVShowMessage.instance.showMessage(text: "All data has been updated\nYou have fresh data")

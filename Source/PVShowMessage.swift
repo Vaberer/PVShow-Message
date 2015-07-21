@@ -30,31 +30,31 @@ public class PVShowMessage {
     }
     
     
-    var delegate: PVShowMessageDelegate? = nil
+    public var delegate: PVShowMessageDelegate? = nil
     
-    static var cBackgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.8)
-    static var cTextColor = UIColor.whiteColor()
-    static var cCornerRadius: CGFloat = 5
-    static var cFontName = UIFont.systemFontOfSize(CL.cFontSize).fontName
-    static var cFontSize: CGFloat = 17.0
-    static var cBorderWidth: CGFloat = 0
-    static var cBorderColor = UIColor.clearColor()
-    static var cPositionFromEdge: CGFloat = 10
-    static var cInitialPosition: InitialPosition = .Bottom
-    static var cExtraShowTimeForMessage: Double = 0.5
-    static var cAnimationDuration: Double = 1
+    public static var cBackgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.8)
+    public static var cTextColor = UIColor.whiteColor()
+    public static var cCornerRadius: CGFloat = 5
+    public static var cFontName = UIFont.systemFontOfSize(CL.cFontSize).fontName
+    public static var cFontSize: CGFloat = 17.0
+    public static var cBorderWidth: CGFloat = 0
+    public static var cBorderColor = UIColor.clearColor()
+    public static var cPositionFromEdge: CGFloat = 10
+    public static var cInitialPosition: InitialPosition = .Bottom
+    public static var cExtraShowTimeForMessage: Double = 0.5
+    public static var cAnimationDuration: Double = 1
     
     
-    static let instance = PVShowMessage()
+    public static let instance = PVShowMessage()
     private var animations: [(text: String, identifier: AnyObject?)] = []
     var concurrentAnimations = 0
     
-    func showMessage(#text: String) {
+    public func showMessage(#text: String) {
         
         showMessage(text: text, identifier: nil)
     }
     
-    func showMessage(#text: String, identifier: AnyObject?) {
+    public func showMessage(#text: String, identifier: AnyObject?) {
         
         let pinTo = UIApplication.sharedApplication().delegate!.window!!
         if animations.isEmpty {
@@ -73,7 +73,7 @@ public class PVShowMessage {
     
     
     
-    func removeAllMessages() {
+    public func removeAllMessages() {
         
         
         animations = []
