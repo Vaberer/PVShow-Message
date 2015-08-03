@@ -203,11 +203,14 @@ class PVView: UIView {
         layer.borderColor = CL.cBorderColor.CGColor
         layer.borderWidth = CL.cBorderWidth
     }
+    
+    
 }
 class PVLabel: UILabel {
     
     convenience init (pinTo: UIView) {
         self.init(frame:CGRectZero)
+        
         
         pinTo.addSubview(self)
         
