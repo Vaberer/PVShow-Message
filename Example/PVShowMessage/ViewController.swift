@@ -25,8 +25,6 @@ class ViewController: UIViewController, PVShowMessageDelegate {
 //        PVShowMessage.cInitialPosition = .Top
 //        PVShowMessage.cAnimationDuration = 1.5
         
-        
-        PVShowMessage.instance.showMessage(text: "All data has been updated\nYou have fresh data")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -35,6 +33,11 @@ class ViewController: UIViewController, PVShowMessageDelegate {
         PVShowMessage.instance.delegate = self
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        PVShowMessage.instance.showMessage(text: "All data has been updated\nYou have fresh data")
+    }
     
     var counter = 0
     @IBAction func bMessagePressed() {

@@ -8,7 +8,7 @@
         <!--Show Message-->
         <scene sceneID="sSz-Cq-KA8">
             <objects>
-                <viewController id="Na5-ie-QCK" customClass="ViewController" customModule="PVPopUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Na5-ie-QCK" customClass="ViewController" customModule="Show_Message" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yo0-X6-NBf"/>
                         <viewControllerLayoutGuide type="bottom" id="EGS-fI-tXb"/>
@@ -29,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLU-Uj-OnO">
-                                <rect key="frame" x="222.5" y="124" width="155" height="36"/>
+                                <rect key="frame" x="223" y="124" width="155" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="SHOW MESSAGE">
                                     <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qau-ew-CCt">
-                                <rect key="frame" x="188.5" y="168" width="223" height="36"/>
+                                <rect key="frame" x="189" y="168" width="223" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="remove messages in stack">
                                     <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -107,7 +107,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAM-M7-jIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="399" y="328"/>
+            <point key="canvasLocation" x="425" y="328"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
