@@ -54,6 +54,6 @@ class ViewController: UIViewController, PVShowMessageDelegate {
     
     func didTapToMessage(identifier: AnyObject?) {
         
-        println("Tapped to message with identifier: \(identifier)")
+        print("Tapped to message with identifier: \(identifier)")
     }
 }

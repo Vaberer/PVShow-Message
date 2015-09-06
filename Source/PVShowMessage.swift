@@ -49,12 +49,12 @@ public class PVShowMessage {
     private var animations: [(text: String, identifier: AnyObject?)] = []
     private var concurrentAnimations = 0
     
-    public func showMessage(#text: String) {
+    public func showMessage(text text: String) {
         
         showMessage(text: text, identifier: nil)
     }
     
-    public func showMessage(#text: String, identifier: AnyObject?) {
+    public func showMessage(text text: String, identifier: AnyObject?) {
         
         let pinTo = UIApplication.sharedApplication().delegate!.window!!
         if animations.isEmpty {
@@ -62,7 +62,7 @@ public class PVShowMessage {
             animations.append((text: text, identifier: identifier))
             if concurrentAnimations == 0 {
                 
-                var v = PVView(pinTo: pinTo, text: text, identifier: identifier)
+                _ = PVView(pinTo: pinTo, text: text, identifier: identifier)
             }
         } else {
             
@@ -79,7 +79,7 @@ public class PVShowMessage {
         animations = []
     }
     
-    private static func delay(#seconds: Double, completion:()->()) {
+    private static func delay(seconds seconds: Double, completion:()->()) {
         let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * seconds ))
         
         dispatch_after(popTime, dispatch_get_main_queue()) {
@@ -151,7 +151,7 @@ class PVView: UIView {
         
         let margin: CGFloat = changeSignIfNeeded(CL.cPositionFromEdge)
         conY.constant = -margin
-        UIView.animateWithDuration(CL.cAnimationDuration, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 10, options: .AllowUserInteraction | .CurveEaseOut, animations: {
+        UIView.animateWithDuration(CL.cAnimationDuration, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 10, options: [.AllowUserInteraction, .CurveEaseOut], animations: {
             
             pinTo.layoutIfNeeded()
             }) { _ in
@@ -175,14 +175,14 @@ class PVView: UIView {
                             }
                             if !CL.instance.animations.isEmpty && CL.instance.concurrentAnimations == 0 {
                                 let info = CL.instance.animations.first!
-                                PVView(pinTo: pinTo, text: info.text, identifier: info.identifier)
+                                _ = PVView(pinTo: pinTo, text: info.text, identifier: info.identifier)
                             }
                     })
                 })
         }
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         settings()
@@ -196,7 +196,7 @@ class PVView: UIView {
     
     func settings() {
         
-        setTranslatesAutoresizingMaskIntoConstraints(false)
+        translatesAutoresizingMaskIntoConstraints = false
         layer.masksToBounds = true
         backgroundColor = CL.cBackgroundColor
         layer.cornerRadius = CL.cCornerRadius
@@ -227,7 +227,7 @@ class PVLabel: UILabel {
         bottom.active = true
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         settings()
@@ -242,7 +242,7 @@ class PVLabel: UILabel {
     func settings() {
         
         backgroundColor = UIColor.clearColor()
-        setTranslatesAutoresizingMaskIntoConstraints(false)
+        translatesAutoresizingMaskIntoConstraints = false
         numberOfLines = 0
         textAlignment = .Center
         
