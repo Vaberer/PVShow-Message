@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, PVShowMessageDelegate {
     
+    private var counter = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,13 +35,8 @@ class ViewController: UIViewController, PVShowMessageDelegate {
         PVShowMessage.instance.delegate = self
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        PVShowMessage.instance.showMessage(text: "All data has been updated\nYou have fresh data")
-    }
     
-    var counter = 0
+    
     @IBAction func bMessagePressed() {
         
         PVShowMessage.instance.showMessage(text: "All data has been updated \(++counter) times.", identifier: counter)
