@@ -40,7 +40,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'PVShow-Message', '~> 1.0.0'
+pod 'PVShow-Message', '~> 1.1.0'
 ```
 
 Then, run the following command:
