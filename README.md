@@ -112,7 +112,7 @@ Implement `PVShowMessageDelegate`
 ```
 
 
-### Removing messages froma a queue
+### Removing messages from a queue
 
 All messages which are going to be shown will be removed from a queue
 ```Swift
