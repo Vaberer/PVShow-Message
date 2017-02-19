@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, PVShowMessageDelegate {
     
-    private var counter = 0
+    fileprivate var counter = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class ViewController: UIViewController, PVShowMessageDelegate {
         
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         PVShowMessage.instance.delegate = self
@@ -38,8 +38,8 @@ class ViewController: UIViewController, PVShowMessageDelegate {
     
     
     @IBAction func bMessagePressed() {
-        
-        PVShowMessage.instance.showMessage(text: "All data has been updated \(++counter) times.", identifier: counter)
+        counter += 1
+        PVShowMessage.instance.showMessage(text: "All data has been updated \(counter) times.", identifier: counter as AnyObject?)
     }
     
     @IBAction func bRemoveStackPressed() {
@@ -49,7 +49,7 @@ class ViewController: UIViewController, PVShowMessageDelegate {
     }
     
     
-    func didTapToMessage(identifier: AnyObject?) {
+    func didTapToMessage(_ identifier: AnyObject?) {
         
         print("Tapped to message with identifier: \(identifier)")
     }

@@ -13,19 +13,8 @@
 		4EB255E91B5D665000033107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB255E71B5D665000033107 /* Main.storyboard */; };
 		4EB255EB1B5D665000033107 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB255EA1B5D665000033107 /* Images.xcassets */; };
 		4EB255EE1B5D665000033107 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EB255EC1B5D665000033107 /* LaunchScreen.xib */; };
-		4EB255FA1B5D665000033107 /* PVShowMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB255F91B5D665000033107 /* PVShowMessageTests.swift */; };
 		4EB256041B5D66B000033107 /* PVShowMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB256031B5D66B000033107 /* PVShowMessage.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4EB255F41B5D665000033107 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4EB255D61B5D665000033107 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4EB255DD1B5D665000033107;
-			remoteInfo = PVPopUp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4E7FDC5D1B5E4C2200C902B6 /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
@@ -36,21 +25,11 @@
 		4EB255E81B5D665000033107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EB255EA1B5D665000033107 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4EB255ED1B5D665000033107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4EB255F31B5D665000033107 /* Show MessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Show MessageTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EB255F81B5D665000033107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EB255F91B5D665000033107 /* PVShowMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVShowMessageTests.swift; sourceTree = "<group>"; };
 		4EB256031B5D66B000033107 /* PVShowMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PVShowMessage.swift; path = ../../Source/PVShowMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4EB255DB1B5D665000033107 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4EB255F01B5D665000033107 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				4EB255E01B5D665000033107 /* PVShowMessage */,
-				4EB255F61B5D665000033107 /* PVPopUpTests */,
 				4EB255DF1B5D665000033107 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				4EB255DE1B5D665000033107 /* Show Message.app */,
-				4EB255F31B5D665000033107 /* Show MessageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,24 +78,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4EB255F61B5D665000033107 /* PVPopUpTests */ = {
-			isa = PBXGroup;
-			children = (
-				4EB255F91B5D665000033107 /* PVShowMessageTests.swift */,
-				4EB255F71B5D665000033107 /* Supporting Files */,
-			);
-			name = PVPopUpTests;
-			path = PVShowMessageTests;
-			sourceTree = "<group>";
-		};
-		4EB255F71B5D665000033107 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4EB255F81B5D665000033107 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,24 +98,6 @@
 			productReference = 4EB255DE1B5D665000033107 /* Show Message.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4EB255F21B5D665000033107 /* Show MessageTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4EB256001B5D665000033107 /* Build configuration list for PBXNativeTarget "Show MessageTests" */;
-			buildPhases = (
-				4EB255EF1B5D665000033107 /* Sources */,
-				4EB255F01B5D665000033107 /* Frameworks */,
-				4EB255F11B5D665000033107 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4EB255F51B5D665000033107 /* PBXTargetDependency */,
-			);
-			name = "Show MessageTests";
-			productName = PVPopUpTests;
-			productReference = 4EB255F31B5D665000033107 /* Show MessageTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -171,10 +112,7 @@
 					4EB255DD1B5D665000033107 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = 7B65AY7GL4;
-					};
-					4EB255F21B5D665000033107 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 4EB255DD1B5D665000033107;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -192,7 +130,6 @@
 			projectRoot = "";
 			targets = (
 				4EB255DD1B5D665000033107 /* Show Message */,
-				4EB255F21B5D665000033107 /* Show MessageTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,13 +142,6 @@
 				4EB255E91B5D665000033107 /* Main.storyboard in Resources */,
 				4EB255EE1B5D665000033107 /* LaunchScreen.xib in Resources */,
 				4EB255EB1B5D665000033107 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4EB255F11B5D665000033107 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,23 +159,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EB255EF1B5D665000033107 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4EB255FA1B5D665000033107 /* PVShowMessageTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4EB255F51B5D665000033107 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4EB255DD1B5D665000033107 /* Show Message */;
-			targetProxy = 4EB255F41B5D665000033107 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4EB255E71B5D665000033107 /* Main.storyboard */ = {
@@ -359,6 +273,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Show Message";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -371,40 +286,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Show Message";
-			};
-			name = Release;
-		};
-		4EB256011B5D665000033107 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PVPopUpTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "Show MessageTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PVPopUp.app/PVPopUp";
-			};
-			name = Debug;
-		};
-		4EB256021B5D665000033107 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PVPopUpTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "Show MessageTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PVPopUp.app/PVPopUp";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -425,15 +307,6 @@
 			buildConfigurations = (
 				4EB255FE1B5D665000033107 /* Debug */,
 				4EB255FF1B5D665000033107 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4EB256001B5D665000033107 /* Build configuration list for PBXNativeTarget "Show MessageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4EB256011B5D665000033107 /* Debug */,
-				4EB256021B5D665000033107 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
