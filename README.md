@@ -124,7 +124,7 @@ All messages which are going to be shown will be removed from a queue
 
 Patrik Vaberer, patrik.vaberer@gmail.com<br/>
 <a target="_blank" href="https://sk.linkedin.com/in/vaberer">LinkedIn</a><br>
-<a target="_blank" href="http://vaberer.me">Blog</a>
+<a target="_blank" href="http://vaberer.com">Blog</a>
 
 
 ### Licence
