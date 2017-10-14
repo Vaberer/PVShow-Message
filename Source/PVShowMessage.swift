@@ -1,5 +1,6 @@
 //
-//  PVShowMessage.swift
+//  CL.swift
+//  Pisma
 //
 //  Created by Patrik Vaberer on 7/20/15.
 //  Copyright (c) 2015 Patrik Vaberer. All rights reserved.
@@ -13,6 +14,8 @@ public protocol PVShowMessageDelegate {
 }
 
 typealias CL = PVShowMessage
+
+@objcMembers
 open class PVShowMessage: NSObject {
     
     fileprivate struct Static {
@@ -77,7 +80,7 @@ class PVView: UIView {
         return CL.cInitialPosition == .top ? -number : number
     }
     
-    func handleTap(_ sender: UIGestureRecognizer) {
+    @objc func handleTap(_ sender: UIGestureRecognizer) {
         if let delegate = CL.instance.delegate {
             delegate.didTapToMessage(identifier)
         }
