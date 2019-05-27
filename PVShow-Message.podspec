@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name = 'PVShow-Message'
-  s.version = '1.2.1'
+  s.version = '1.2.2'
   s.license = 'MIT'
-  s.summary = 'Simple library to show custom message with a touch event'
+  s.summary = 'Simple library to show custom message with a tap event'
   s.homepage = 'https://github.com/Vaberer/PVShow-Message'
   s.screenshots = "https://raw.githubusercontent.com/Vaberer/PVShow-Message/master/resources/pvshow_message.gif"
   s.social_media_url = 'http://twitter.com/vaberer'

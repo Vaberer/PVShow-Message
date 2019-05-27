@@ -88,7 +88,7 @@ import PVShow_Message
 
 You can attach any identifier to the message view and it will be returned to you via a delegate method
 ```Swift
-    PVShowMessage.instance.showMessage(text: "My Text", identifier: 10)
+    PVShowMessage.instance.showMessage(text: "My Text", identifier: "identifier")
 ```
 
 Tell a message view who is delegate in a `viewWillAppear` method
@@ -105,7 +105,7 @@ override func viewWillAppear(animated: Bool) {
 Implement `PVShowMessageDelegate`
 
 ```Swift
-    func didTapToMessage(identifier: AnyObject?) {
+    func didTapToMessage(identifier: String?) {
         
         println("Tapped to a message with identifier: \(identifier)")
     }

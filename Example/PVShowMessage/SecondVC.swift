@@ -12,6 +12,7 @@ class SecondVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         PVShowMessage.instance.showMessage(text: "All data has been updated")
     }
 
