@@ -40,7 +40,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'PVShow-Message', '~> 1.2.1'
+pod 'PVShow-Message', '~> 1.3.0'
 ```
 
 Then, run the following command:
@@ -69,16 +69,15 @@ import PVShow_Message
 
 ### Customize your message view via these properties
 ```Swift
-        PVShowMessage.cBackgroundColor = UIColor.blackColor()
-        PVShowMessage.cBorderColor = UIColor.lightGrayColor()
+        PVShowMessage.cBackgroundColor = .black
+        PVShowMessage.cBorderColor = .clear
         PVShowMessage.cBorderWidth = 3
         PVShowMessage.cCornerRadius = 0
-        PVShowMessage.cFontName = "HelveticeNeue-Light"
-        PVShowMessage.cFontSize = 40
-        PVShowMessage.cTextColor = UIColor.lightTextColor()
+        PVShowMessage.cFont = UIFont.systemFont(ofSize: 20)
+        PVShowMessage.cTextColor = .white
         PVShowMessage.cPositionFromEdge = 200
         PVShowMessage.cExtraShowTimeForMessage = 3
-        PVShowMessage.cInitialPosition = .Top
+        PVShowMessage.cInitialPosition = .top
         PVShowMessage.cAnimationDuration = 1.5
 ```
 
@@ -107,7 +106,7 @@ Implement `PVShowMessageDelegate`
 ```Swift
     func didTapToMessage(identifier: String?) {
         
-        println("Tapped to a message with identifier: \(identifier)")
+        print("Tapped to a message with identifier: \(identifier)")
     }
 ```
 
@@ -124,7 +123,6 @@ All messages which are going to be shown will be removed from a queue
 
 Patrik Vaberer, patrik.vaberer@gmail.com<br/>
 <a target="_blank" href="https://sk.linkedin.com/in/vaberer">LinkedIn</a><br>
-<a target="_blank" href="http://vaberer.com">Blog</a>
 
 
 ### Licence

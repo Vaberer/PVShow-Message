@@ -8,16 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		4E7FDC5E1B5E4C2200C902B6 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7FDC5D1B5E4C2200C902B6 /* SecondVC.swift */; };
+		4E993E6824ADCFFB0055E7AA /* PVShowMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E993E6724ADCFFB0055E7AA /* PVShowMessage.swift */; };
 		4EB255E41B5D665000033107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB255E31B5D665000033107 /* AppDelegate.swift */; };
 		4EB255E61B5D665000033107 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB255E51B5D665000033107 /* ViewController.swift */; };
 		4EB255E91B5D665000033107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB255E71B5D665000033107 /* Main.storyboard */; };
 		4EB255EB1B5D665000033107 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB255EA1B5D665000033107 /* Images.xcassets */; };
 		4EB255EE1B5D665000033107 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EB255EC1B5D665000033107 /* LaunchScreen.xib */; };
-		4EB256041B5D66B000033107 /* PVShowMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB256031B5D66B000033107 /* PVShowMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E7FDC5D1B5E4C2200C902B6 /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		4E993E6724ADCFFB0055E7AA /* PVShowMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PVShowMessage.swift; sourceTree = "<group>"; };
+		4E993E6924ADD0C00055E7AA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4E993E6A24ADD0C00055E7AA /* PVShow-Message.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PVShow-Message.podspec"; path = "../PVShow-Message.podspec"; sourceTree = "<group>"; };
+		4E993E6B24ADD0C00055E7AA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4EB255DE1B5D665000033107 /* Show Message.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Show Message.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB255E21B5D665000033107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EB255E31B5D665000033107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +29,6 @@
 		4EB255E81B5D665000033107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EB255EA1B5D665000033107 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4EB255ED1B5D665000033107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4EB256031B5D66B000033107 /* PVShowMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PVShowMessage.swift; path = ../../Source/PVShowMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +42,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E993E6624ADCFFB0055E7AA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4E993E6724ADCFFB0055E7AA /* PVShowMessage.swift */,
+			);
+			name = Source;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
 		4EB255D51B5D665000033107 = {
 			isa = PBXGroup;
 			children = (
+				4E993E6924ADD0C00055E7AA /* LICENSE */,
+				4E993E6A24ADD0C00055E7AA /* PVShow-Message.podspec */,
+				4E993E6B24ADD0C00055E7AA /* README.md */,
 				4EB255E01B5D665000033107 /* PVShowMessage */,
 				4EB255DF1B5D665000033107 /* Products */,
 			);
@@ -58,9 +73,9 @@
 		4EB255E01B5D665000033107 /* PVShowMessage */ = {
 			isa = PBXGroup;
 			children = (
+				4E993E6624ADCFFB0055E7AA /* Source */,
 				4EB255E51B5D665000033107 /* ViewController.swift */,
 				4E7FDC5D1B5E4C2200C902B6 /* SecondVC.swift */,
-				4EB256031B5D66B000033107 /* PVShowMessage.swift */,
 				4EB255E71B5D665000033107 /* Main.storyboard */,
 				4EB255EA1B5D665000033107 /* Images.xcassets */,
 				4EB255EC1B5D665000033107 /* LaunchScreen.xib */,
@@ -152,9 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EB256041B5D66B000033107 /* PVShowMessage.swift in Sources */,
 				4EB255E61B5D665000033107 /* ViewController.swift in Sources */,
 				4E7FDC5E1B5E4C2200C902B6 /* SecondVC.swift in Sources */,
+				4E993E6824ADCFFB0055E7AA /* PVShowMessage.swift in Sources */,
 				4EB255E41B5D665000033107 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

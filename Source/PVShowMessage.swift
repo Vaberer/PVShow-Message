@@ -27,8 +27,7 @@ open class PVShowMessage: NSObject {
     public static var cBackgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.8)
     public static var cTextColor = UIColor.white
     public static var cCornerRadius: CGFloat = 5
-    public static var cFontName = UIFont.systemFont(ofSize: CL.cFontSize).fontName
-    public static var cFontSize: CGFloat = 17.0
+    public static var cFont = UIFont.systemFont(ofSize: 17)
     public static var cBorderWidth: CGFloat = 0
     public static var cBorderColor = UIColor.clear
     public static var cPositionFromEdge: CGFloat = 10
@@ -102,6 +101,7 @@ class PVView: UIView {
         conX.isActive = true
 
         let position = CL.cInitialPosition == .bottom ? NSLayoutConstraint.Attribute.bottom : NSLayoutConstraint.Attribute.top
+
 
         let conY = NSLayoutConstraint(item: self, attribute: position, relatedBy: .equal, toItem: pinTo, attribute: position, multiplier: 1.0, constant: changeSignIfNeeded(100))
         conY.isActive = true
@@ -213,11 +213,7 @@ class PVLabel: UILabel {
         numberOfLines = 0
         textAlignment = .center
 
-        if let f = UIFont(name: CL.cFontName, size: CL.cFontSize) {
-            font = f
-        } else {
-            font = UIFont(name: font.fontName, size: CL.cFontSize)
-        }
+        font = CL.cFont
         textColor = CL.cTextColor
     }
 
